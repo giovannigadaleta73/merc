@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+                <!-- Modalità standalone
+ --> 
+        <meta name="apple-mobile-web-app-capable" content="yes"> 
+        <!— Impostazione statusbar
+ --> 
+        <meta name="apple-mobile-web-app-status-bar-style" content="black"> 
+        <!— Titolo in home screen 
+--> 
+        <meta name="apple-mobile-web-app-title" content="HTML Mobile Accelerato Web App"> 
+        <!-- Disabilita i numeri di telefono
+ --> 
+        <meta name="format-detection" content="telephone=no"> 
+        <!-- Imposta la viewport
+. --> 
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/> 
+        <!-- Previene l’aggiustamento delle dimensioni del testo al cambio di orientamento del dispositivo
+ --> 
+        <style>html { -webkit-text-size-adjust: 100%; }</style> 
+        <title>COMUNiCA</title> 
+        <meta charset="utf-8" />
+        <meta name="mobile-web-app-capable" content="yes"> 
+        <script src="ydn.db-is-core-e-qry-dev.js"></script>
+        <link rel="stylesheet" href="dist/css/phonon.css" />
+        <link rel="stylesheet" href="tpl/fonts/style.css" />
+        <link rel="stylesheet" href="dist/css/components/tabs.css">
+        <link rel="stylesheet/less" type="text/css" href="styles.less" /><!-- In produzione devo compilare il file less in css -->
+
+
+    </head>
+    <body>
+        
+        <!-- Panel tags go here -->
+
+        <!-- Side Panel tags go here -->
+        
+        <!-- Notification tags go here -->
+
+        <!-- Dialog tags go here -->
+
+        <!-- the home page is the default one. This page does not require to call its content because we define on its tag.-->
+        <splash data-page="true" data-nocache="true" class="app-page"></splash>
+        <home data-page="true" data-nocache="true" class="app-page"></home>
+        <segnala data-page="true" data-nocache="true" class="app-page"></segnala>
+        <archivio data-page="true" data-nocache="true" class="app-page"></archivio>
+        <settings data-page="true" data-nocache="true" class="app-page"></settings>
+        <credit data-page="true" data-nocache="true" class="app-page"></credit>
+        <iscrizione data-page="true" data-nocache="true" class="app-page"></iscrizione>
+        
+ 
+        <script src="dist/js/phonon-core.js"></script>
+        <script src="dist/js/components/side-panels.min.js"></script><!-- verificare se è ancora utilizzata -->
+        <script src="dist/js/components/tabs.min.js"></script>
+        <script src="dist/js/dragend.js"></script>        
+        <script src="app.js"></script>
+        <script>
+          less = {
+            env: "development",
+            async: false,
+            fileAsync: false,
+            poll: 1000,
+            functions: {},
+            dumpLineNumbers: "comments",
+            relativeUrls: false,
+            rootpath: ":"
+          };
+        </script>
+        <script src="less.min.js"></script>
+
+
+    </body>
+</html>

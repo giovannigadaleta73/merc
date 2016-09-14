@@ -1,0 +1,398 @@
+/* ------------- MODIFICHE A PHONON.CSS */
+select{
+    border: none;
+}
+
+.header-bar{
+    background-color:#55585d;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.2rem;
+}
+
+.header-bar .icon{
+    color:#fff;
+}
+
+
+
+/* ------------- DRAGEND */
+.dragEnd {
+    border-bottom: 1px silver solid;
+}
+
+
+/* ------------- GENERALE */
+
+html{   
+    font-size:100%; 
+}
+
+body{
+    position: relative;
+}
+
+
+
+/* --------------------------- PAGINA HOME --------------------------- */
+
+home .content{
+    ackground: darkslategrey; /* Old browsers */
+    ackground: -webkit-linear-gradient(-45deg, #333 30%, #444 70%); 
+}
+
+
+home .content button{
+    background-color: transparent;
+    width: 50%;
+    margin: 10% 24%;    
+}
+
+home div.grande{
+    background-color:transparent;
+    border: ivory 0.2rem dotted;
+    border-radius: 50%;    
+    height: 8rem; 
+    margin: auto;
+    opacity: 0.7;
+    padding-top: 1.3rem;
+    width: 8rem;
+}
+
+    home .icon{
+        color:ivory;
+        opacity: 0.9;
+    }
+
+    home span.i-camera{
+        font-size: 3.3rem;
+    }
+
+    home .grande p{
+        background-color: #383838;  
+        color: ivory;
+        font-size: 1.5rem;
+        font-weight: 100;
+        letter-spacing: 0.5rem;
+        margin-top: 5%;
+        margin-left: -24%;
+        margin-right: -30%;
+        text-align: center;
+    }
+
+    home div.info{
+        background-color: rgba(101, 156, 239, 0.7);
+        border-top: 1px solid blue;
+        bottom: 0;
+        height: 40%;
+        position: fixed;
+        width: 100%;  
+    }
+
+        home .info .riga{
+            color: white;
+            padding-left: 10%;
+            width: 100%;
+        }
+
+            home .info .riga.r1{
+                height: 25%;
+                padding-top: 2%;
+            }
+
+                home .info .riga.r1 .n-segnalazioni{
+                    font-size: 3rem;
+                    font-weight: 100;  
+                }
+
+                home .info .riga.r1 .label-segnalazioni{
+                    color: ivory;
+                    font-size: 1.2rem;
+                    font-weight: 100;
+                    opacity: 0.7;
+                }
+
+            home .info .riga.r2{
+                height: 45%;
+                padding-left: 17%;
+                    padding-top: 2%;
+            }
+
+                home .info .riga.r2 .n-aggiornamenti{
+                    font-weight: 100;  
+                    font-size: 3rem;
+                }
+
+                home .info .riga.r2 .label-aggiornamenti{
+                    color: ivory;
+                    font-size: 1.2rem;
+                    font-weight: 100;
+                    opacity: 0.7;
+                }
+
+            home .info .riga.r3{
+                position: absolute;
+                bottom: 0;
+                color: white;
+                padding-bottom: 1%;
+            }
+
+            home .info .riga.r3 .n-versione, home .info .riga.r3 .nome-utente{                
+                color: ivory;
+                opacity: 0.7;
+            }
+            home .info .riga.r3 .i-utente, home .info .riga.r3 .i-mobile{                
+                color: white;
+                font-size: 0.9rem;
+                opacity: 1;
+            
+            }
+
+
+/* --------------------------- PAGINA ARCHIVIO --------------------------- */
+
+ 
+archivio .content{
+        background: darkslategrey; /* Old browsers */
+    background: -webkit-linear-gradient(-45deg, #333 15%, #3a3a3a 70%); 
+
+}
+
+archivio *{
+        font-family: sans-serif;
+}
+
+archivio  .item-archivio-dati{
+    height: 84px;
+}
+
+    archivio div.img, archivio div.dati{
+        background-color: #334466; background-color: #222930;
+        border-bottom: 1px solid #000;
+        border-top: 1px solid #666;
+        border-left: 1px solid #666;
+        border-right: 1px solid #000;
+        display: inline-block;
+        float: left;
+        height: 100%;
+    }
+
+    archivio div.img{
+        background-size: auto 84px;
+        background-repeat: no-repeat;    
+        width: 20%;
+    }
+
+    archivio div.dati{
+        padding: 0.3rem;
+        width: 80%;
+    }
+    archivio div.dati > div{
+        height: 25%;
+    }
+    archivio div.dati div:first-child{
+        height: 50%;
+    }
+        archivio div.dati *{
+            color: white;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }    
+            archivio div.dati .strada{
+                font-size: 1.3rem;
+            }
+
+            archivio div.dati .altri-dati span{
+                font-size: 1rem;
+            }
+
+            archivio div.dati .altri-dati span.data-creazione{
+                color:cornflowerblue;
+            }
+
+            archivio div.dati .altri-dati span.situazione{
+                color:cornflowerblue;
+            }
+
+
+
+archivio .btn{
+    background-color: transparent;
+    font-size: 28px;
+}
+archivio .item-archivio-dati .btn, archivio .item-archivio-azioni .btn{
+    background-color: transparent;
+    font-size: 35px;
+}
+
+archivio .item-archivio-azioni{
+    background-color: #346; background-color: #222930;
+    border-bottom: 1px solid #000;
+    border-top: 1px solid #666;
+    border-left: 1px solid #666;
+    border-right: 1px solid #000;
+    height: 84px;    
+}
+
+archivio  .item-archivio-azioni button{
+    border: dashed 1px silver;
+    background-color: transparent;
+    color: cornflowerblue;
+    font-size: 30px;
+    margin: 10px 5px;
+    padding: 10px;
+    height: 60px;
+    width: 60px;
+}
+
+archivio  .item-archivio-azioni button:first-child{
+    border: none;
+    color: white;
+}
+
+archivio  .item-archivio-azioni button:last-child{
+    color:#e94c69;
+}
+
+
+
+
+/* --------------------------- PAGINA SEGNALA --------------------------- */
+
+
+segnala div.tabella{
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+
+segnala div.riga{
+    background-color: #333;
+    display: table-row;
+    height: 12%;
+}
+
+segnala div.riga.r1{
+    height: 30%;
+}
+segnala div.riga.r5{
+    height: 30%;
+}
+
+segnala div.label, segnala div.valore{
+    border-bottom: 1px solid #000;
+    border-top: 1px solid #666;
+    border-left: 1px solid #666;
+    border-right: 1px solid #000;
+    color: whitesmoke;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;    
+}
+
+segnala div.label{
+    width: 20%;
+}
+
+segnala div.label span{
+    color: cornflowerblue;
+    font-weight: 100;
+    font-size: 3rem;
+}
+
+segnala div.valore select{
+    background-color: transparent;
+    color: ivory;
+    font-size: 1rem;
+    font-weight: 100;
+    height: 100%;
+    letter-spacing: 0.01rem;
+    padding-left: 1rem;    
+}
+
+segnala div.r4 .valore{
+    text-align: left;
+}
+
+segnala div.r4 label.checkbox{
+    font-size: 1rem;
+    font-weight: 100;
+    letter-spacing: 0.01rem;
+    padding-left: 1rem;    
+    color: ivory;
+    width: 70%;
+}
+
+segnala label.checkbox span{
+    color: ivory;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+segnala div#nota{
+    color: ivory;
+    padding: 0.2rem 0.4rem;
+    text-align: left;
+    vertical-align: top;
+}
+
+
+
+@media all and (orientation:landscape) {
+    
+    home .content button{
+        width: 50%;
+        margin: 2% 24%;    
+    }
+     
+    home div.grande{
+        background-color:transparent;
+        border: ivory 0.3rem solid;
+        border-radius: 50%;
+
+        height: 6rem; 
+        margin: auto;
+        opacity: 0.7;
+        padding-top: 0.9rem;
+        width: 6rem;
+    }
+    home .grande p{
+        font-size: 0.9rem;
+        font-weight: 100;
+        letter-spacing: 0.5rem;
+        margin-top: 5%;
+        margin-left: -24%;
+        margin-right: -30%;
+        text-align: center;
+    }
+     
+     
+    home span.i-camera{
+        font-size: 2rem;
+    }
+  
+    home .info{
+        height: 45%;
+    }    
+     
+    home .info .riga.r1{
+        padding-top: 0%;
+    }
+    
+    home .info .riga.r2{
+        height: 40%;
+    }
+    
+    home .info .riga.r3{
+        height: 15%;
+    }    
+     
+    segnala div.label span{
+        color: white;
+        font-weight: 100;
+        font-size: 2rem;
+     }
+}
+

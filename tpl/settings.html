@@ -1,0 +1,39 @@
+<settings class="app-page"> 
+    <header class="header-bar">
+        <div class="center">
+            <button class="btn icon i-sx pull-left"  data-navigation="$previous-page"></button>
+            <h1 class="title">SETTINGS</h1>
+        </div>
+    </header>
+    <nav class="tabs">
+        <div class="tab-items">
+            <a class="tab-item" ><i class="icon i-aggiorna"></i>Aggiorna</a>
+            <a class="tab-item" ><i class="icon i-cancella"></i>Cancella</a>
+        </div>
+        <div class="tab-indicator"></div>
+    </nav>
+    <div class="content" data-tab-contents="true" data-disable-swipe="false" data-tab-default="1" >
+        <div class="tab-content">
+            <div class="menu">
+                <h1 class="title">Configurazione</h1>
+                <p>Fase di Sviluppo: aggiorna Stradario e Tipologie dal server. Va aggiunta la verifica della versione.</p>
+            </div>
+            <div class="info">
+                <ul id="carica-configurazione">
+                    <li ><button id="aggiorna_configurazione" class="btn primary"><i class="icon i-aggiorna" ></i> AGGIORNA IL PROGRAMMA </button></li>                                
+                </ul>
+            </div>
+        </div>
+        <div class="tab-content">
+            <div class="menu">
+                <h1 class="title">Cancella il database </h1>
+                <p>Fase di Sviluppo: cancella i db.</p>
+            </div>
+            <div class="info">
+                <ul id="db-da-cancellare">
+                    <li ><button id="cancellaDb_db" class="btn primary"><i class="icon i-canc" ></i> STRADARIO </button></li>               
+                </ul>
+            </div>    
+        </div>
+    </div>
+</settings>

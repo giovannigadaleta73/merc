@@ -1,0 +1,135 @@
+@font-face {
+    font-family: 'icomoon';
+    src:
+        url('icomoon.ttf?hypcfb') format('truetype'),
+        url('icomoon.woff?hypcfb') format('woff'),
+        url('icomoon.svg?hypcfb#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.icon {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    
+    /* Enable Ligatures ================ */
+    letter-spacing: 0;
+    -webkit-font-feature-settings: "liga";
+    -moz-font-feature-settings: "liga=1";
+    -moz-font-feature-settings: "liga";
+    -ms-font-feature-settings: "liga" 1;
+    font-feature-settings: "liga";
+    -webkit-font-variant-ligatures: discretionary-ligatures;
+    font-variant-ligatures: discretionary-ligatures;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.i-home:before {
+    content: "\e900";
+}
+.i-modifica:before {
+    content: "\e905";
+}
+.i-camera:before {
+    content: "\e90f";
+}
+.i-archivio:before {
+    content: "\e92e";
+}
+.i-geo:before {
+    content: "\e948";
+}
+.i-time:before {
+    content: "\e94e";
+}
+.i-alarm:before {
+    content: "\e950";
+}
+.i-mobile:before {
+    content: "\e958";
+}
+.i-invia:before {
+    content: "\e961";
+}
+.i-salva:before {
+    content: "\e962";
+}
+.i-utente:before {
+    content: "\e971";
+}
+.i-nota:before {
+    content: "\e978";
+}
+.i-aggiorna:before {
+    content: "\e984";
+}
+.i-settings2:before {
+    content: "\e992";
+}
+.i-settings:before {
+    content: "\e995";
+}
+.i-attendi:before {
+    content: "\e9a2";
+}
+.i-lab:before {
+    content: "\e9aa";
+}
+.i-cancella:before {
+    content: "\e9ac";
+}
+.i-target:before {
+    content: "\e9b3";
+}
+.i-chiudi:before {
+    content: "\e9b6";
+}
+.i-menu:before {
+    content: "\e9bd";
+}
+.i-inviato:before {
+    content: "\e9c4";
+}
+.i-ok:before {
+    content: "\e9e1";
+}
+.i-bad:before {
+    content: "\e9e5";
+}
+.i-info:before {
+    content: "\ea0c";
+}
+.i-annullato:before {
+    content: "\ea0e";
+}
+.i-canc:before {
+    content: "\ea0f";
+}
+.i-incorso:before {
+    content: "\ea15";
+}
+.i-attesa:before {
+    content: "\ea16";
+}
+.i-dx:before {
+    content: "\ea3c";
+}
+.i-sx:before {
+    content: "\ea40";
+}
+.i-check:before {
+    content: "\ea52";
+}
+.i-nota2:before {
+    content: "\ea8e";
+}
+

@@ -1,0 +1,421 @@
+@import "palette.less";
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+}
+
+header.header-bar {
+    background-color: @darkPrimaryColor;
+}
+
+// ------------------------------------------------------
+//          ICONA
+// ------------------------------------------------------
+// DEFINISCO LE ICONE 
+// div      = cerchio che racchiude l'icona
+//   -- a   = link+icona
+// p        = etichetta
+.div-icona {
+    div {
+        background-color: @accentColor;
+        border-radius: 100%;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.23), 0 3px 10px rgba(0, 0, 0, 0.16);
+        display: inline-block;
+        line-height: 1rem;
+        margin: 5%;
+        padding: 1rem;
+        text-align: center;
+        a {
+            color: @textPrimaryColor;
+            font-size: 1.6rem;
+        }
+        label {
+            color: @textPrimaryColor;
+            font-size: 1.6rem;
+            line-height: 1;
+            height: 1.6rem;
+        }
+    }
+    p {
+        color: @lightPrimaryColor;
+        font-size: 1rem;
+    }
+    &:hover, &:active{
+        background-color: @textPrimaryColor;
+    }
+}
+
+button{
+    &:hover, &:active{
+        background-color: @textPrimaryColor;
+    }
+}
+// ------------------------------------------------------
+//          HOME
+// ------------------------------------------------------
+home .menu {
+    display: table;
+    background-color: @primaryColor;
+    background-size: 75%;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    float: left;
+    height: 50%;
+    width: 100%;
+    >div {
+        display: table-row;
+        >div {
+            border: 0.1rem solid @dividerColor;
+            color: @textPrimaryColor;
+            display: table-cell;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            vertical-align: middle;
+            width: 50%;
+            .div-icona
+        }
+    }
+}
+
+home .info {
+    display: inline-block;
+    float: left;
+    padding-top: 10%;
+    width: 100%;
+    .riga {
+        border-bottom: 0.1rem solid @dividerColor;
+        padding-left: 5%;
+        width: 100%;
+        div:first-child {
+            color: @secondaryTextColor;
+            height: 25%;
+            margin-right: 1rem;
+            display: inline-block;
+            font-size: 2.5rem;
+            ont-weight: 100;
+            text-align: right;
+            width: 20%;
+            span.i-geo {
+                font-size: 3rem;
+                font-weight: 100;
+            }
+        }
+        div:last-child {
+            color: @primaryTextColor;
+            display: inline-block;
+            font-size: 1.2rem;
+        }
+    }
+    .riga.r3 {
+        background-color: @primaryColor;
+        position: absolute;
+        bottom: 0;
+        color: @lightPrimaryColor;
+        padding-bottom: 1%;
+        padding-top: 1%;
+        .i-utente,
+        .i-mobile {
+            color: @lightPrimaryColor; //@secondaryTextColor;
+            font-size: 1rem;
+        }
+        .n-versione,
+        .nome-utente {
+            color: @textPrimaryColor;
+            font-size: 1rem;
+        }
+    }
+}
+
+// ------------------------------------------------------
+//          ARCHIVIO
+// ------------------------------------------------------
+archivio .content {
+    .item-archivio-dati {
+        background-color: @primaryColor;
+        height: 5.5rem;
+        >div.img,
+        >div.dati {
+            border-bottom: 0.1rem solid @dividerColor;
+            border-left: 0.1rem solid @dividerColor;
+            display: inline-block;
+            float: left;
+            height: 100%;
+        }
+        div.img {
+            background-size: auto 84px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 20%;
+        }
+        div.dati {
+            padding: 0.2rem;
+            width: 80%;
+            * {
+                color: @lightPrimaryColor;
+                font-size: 0.8rem;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+            .strada {
+                color: @textPrimaryColor;
+                font-size: 1.3rem;
+                height: 50%;
+            }
+            .altri-dati {
+                .icon {
+                    color: @textPrimaryColor;
+                    font-size: 0.9rem;
+                }
+            }
+        }
+    }
+    .item-archivio-azioni {
+        background-color: @primaryColor;
+        display: table;
+        height: 5.5rem;
+        width: 100%;
+        >div {
+            display: table-row;
+            >div {
+                border: 0.1rem solid @dividerColor;
+                color: @textPrimaryColor;
+                display: table-cell;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+                vertical-align: middle;
+                width: 33%;
+                .div-icona
+            }
+        }
+    }
+}
+
+// ------------------------------------------------------
+//          SETTINGS
+// ------------------------------------------------------
+settings .content {
+    .menu {
+        background-color: @primaryColor;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+        color: @textPrimaryColor;
+        display: block;
+        padding: 0.5rem;
+        width: 100%;
+        h1 {
+            text-align: center;
+        }
+        p {
+            color: @lightPrimaryColor;
+            padding: 0.3rem;
+        }
+    }
+    .info {
+        margin-bottom: 2rem;
+        width: 100%;
+        li {
+            list-style-type: none;
+            margin-top: 0.5rem;
+            input[type="text"]{
+                width: 80%;
+            }
+            input[type="email"]{
+                width: 80%;
+            }
+        }
+    }
+}
+
+
+// ------------------------------------------------------
+//          CREDIT
+// ------------------------------------------------------
+credit .content {
+    .menu {
+        background-color: @primaryColor;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+        color: @textPrimaryColor;
+        display: block;
+        padding: 0.5rem;
+        width: 100%;
+        h1 {
+            text-align: center;
+        }
+        p {
+            color: @lightPrimaryColor;
+            padding: 0.3rem;
+        }
+    }
+    .info {
+        margin-bottom: 2rem;
+        width: 100%;
+        li {
+            list-style-type: none;
+            margin-top: 0.5rem;
+            input[type="text"]{
+                width: 80%;
+            }
+            input[type="email"]{
+                width: 80%;
+            }
+        }
+    }
+}
+
+// ------------------------------------------------------
+//          ISCRIZIONE
+// ------------------------------------------------------
+iscrizione .content {
+    .menu {
+        background-color: @primaryColor;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+        color: @textPrimaryColor;
+        display: block;
+        padding: 0.5rem;
+        width: 100%;
+        h1 {
+            text-align: center;
+        }
+        p {
+            color: @lightPrimaryColor;
+            padding: 0.3rem;
+        }
+    }
+    .info {
+        margin-bottom: 2rem;
+        width: 100%;
+        li {
+            list-style-type: none;
+            margin-top: 0.5rem;
+            input[type="text"]{
+                width: 80%;
+            }
+            input[type="email"]{
+                width: 80%;
+            }
+            select{
+                width: 80%;
+                option{
+                    padding: 0.2rem;
+                    width: 50%;
+                }
+            }
+        }
+    }
+}
+
+// ------------------------------------------------------
+//          SEGNALA
+// ------------------------------------------------------
+
+
+segnala .testata {
+    background-image: ~"url('ARC/image.png')";
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    float: left;
+    height: 40%;
+    position: relative;
+    width: 100%;
+    #box_segnala {
+        display: inline-block;
+        bottom: -2rem;
+        position: absolute;
+        right: 2rem;
+        .div-icona
+    }
+    div.foto {
+        border-bottom: 0.1rem solid @dividerColor;
+        border-left: 0.1rem solid @dividerColor;
+        display: inline-block;
+        float: left;
+        eight: 100%;
+        overflow-y: hidden;
+        width: 100%;
+        }
+}
+
+
+
+
+
+
+segnala .info {
+    display: inline-block;
+    float: left;
+    padding-top: 10%;
+    width: 100%;
+    .riga {  
+        padding: 2%;
+        height: 20%;
+        width: 100%;
+        div:first-child {
+            color: @secondaryTextColor;          
+            margin: auto;
+            display: inline-block;
+            font-size: 1.5rem;
+            font-weight: 100;
+            text-align: center;
+            width: 20%;
+            span {
+                font-size: 2rem;
+                font-weight: 100;
+            }
+        }
+        
+        select{            
+            color: @primaryTextColor;
+            font-size: 1.1rem;
+            padding-left: 0.7rem;
+            width: 70%;
+        }
+        .label_nota{
+            
+            
+        }
+    }
+    .riga_nota{
+        padding: 2%;
+        height: 6rem;
+        width: 100%;
+        div:first-child {
+            color: @secondaryTextColor;          
+            margin: auto;
+            display: inline-block;
+            font-weight: 100;
+            text-align: center;
+            width: 20%;
+            span {
+                font-size: 2rem;
+                font-weight: 100;
+            }
+        }
+        textarea{
+            border-bottom: 0.1rem solid @dividerColor;
+            height: 100%;
+            width: 70%;
+        }
+    }
+}
+
+
+// ------------------------------------------------------
+//          MEDIA QUERY
+// ------------------------------------------------------
+// CONTROLLO IL CASO IN CUI IL DISPOSITIVO è IN MODALITA' LANDSCAPE
+// IDENTIFICA I TABLET, I CELL LANDSCAPE E LA VERSIONE DESKTOP 
+@media all and (orientation:landscape) {
+    home .menu,
+    home .info {
+        height: 100%;
+        width: 50%;
+    }
+    home .info {
+        padding-top: 3%;
+    }
+}
